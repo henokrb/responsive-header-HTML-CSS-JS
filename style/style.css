@@ -1,0 +1,226 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: aliceblue;
+}
+
+/* VARIABLE DECLARATION START  */
+:root {
+  scroll-behavior: smooth;
+  font-family: "Kumbh Sans", poppins, "Avenir Next LT Pro Light", sans-serif;
+
+  --accent-color: hsl(127, 100%, 50%);
+  --header-height: 60px;
+  --default-font-size: 14px;
+}
+/* VARIABLE DECLARATION END  */
+
+/* LINK STYLING START  */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+/* LINK STYLING END  */
+
+/* HEADER STYLING START  */
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly; /* choose space-evenly or space-between  */
+  padding: 10px 20px;
+  background-color: #333;
+
+  position: fixed; /* To make header fixed on page scroll */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+/* Logo */
+
+.logo {
+  font-size: 1.5em;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  transition: transform 0.3s ease-out;
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.logo-responsive {
+  display: none;
+}
+
+/* Navigation Menu */
+
+nav {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.nav-link {
+  color: #fff;
+  margin-left: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+.nav-link.active {
+  color: var(--accent-color); /* Active Menu Color  */
+}
+
+/* Navigation Menu Hover Effect - Smooth Underline */
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
+/* CTA Button */
+
+.cta {
+  padding: 0 50px;
+  transition: transform 0.3s ease-out;
+}
+
+.cta:hover {
+  transform: scale(1.2);
+}
+
+.cta .cta-button {
+  color: #000;
+  background-color: var(--accent-color);
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+}
+
+.cta .cta-button:hover {
+  color: var(--accent-color);
+  background-color: #000;
+}
+
+/* Hamburger Responsive Menu Icon   */
+
+.hamburger-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  height: 3px;
+  margin: 3px;
+  width: 25px;
+}
+
+/* Responsive Menu Box   */
+
+.responsive-menu-box {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* width: 100vw; */
+  width: 300px;
+  background-color: #333;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.responsive-menu-box .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #fff;
+}
+
+.responsive-menu-box .logo-box {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.responsive-menu-box .menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.responsive-menu-box .menu a {
+  padding: 5px 20px;
+  margin: 5px 0; /* Add vertical gap between menu items */
+  color: #fff;
+  text-decoration: none;
+}
+/* Responsive Styling  */
+
+@media (max-width: 600px) {
+  nav,
+  .logo {
+    display: none;
+  }
+
+  .hamburger-icon,
+  .logo-responsive {
+    display: flex;
+  }
+
+  .responsive-menu-box.showMenu {
+    transform: translateX(0);
+  }
+
+  header {
+    justify-content: space-between;
+    padding: 5px 5px;
+  }
+
+  .cta {
+    padding: 0 10px;
+    transition: transform 0.3s ease-out;
+  }
+
+  .cta-button {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+}
+
+.showMenu .responsive-menu-box .menu {
+  display: flex !important;
+}
+
+/* HEADER STYLING END  */
