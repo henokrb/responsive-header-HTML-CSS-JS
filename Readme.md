@@ -14,7 +14,7 @@ Desktop Header view with Logo, Menu & Call to Action (CTA) Button.
 - [x] Logo & CTA Button with hover scale effect
 - [x] Favicon added.
 
-![image](https://heny.dev/projects/responsive-header/assets/images/Header-Desktop.png)
+![image](https://heny.dev/projects/JavaScript/responsive-header/assets/images/Header-Desktop.png)
 
 ### Resposive View
 
@@ -24,7 +24,7 @@ Resposive Header view with Logo, Menu & Call to Action (CTA) Button.
 
 - [x] You can use a separate responsive logo (either Text or Image)
 
-![alt text](https://heny.dev/projects/responsive-header/assets/images/Header-Responsive.png)
+![alt text](https://heny.dev/projects/JavaScript/responsive-header/assets/images/Header-Responsive.png)
 
 ### Resposive View - Menu opened
 
@@ -35,17 +35,17 @@ Resposive Menu when opened.
 - [x] Added Logo on the top-left position
 - [x] Close icon on the right-top
 
-![image](https://heny.dev/projects/responsive-header/assets/images/Header-Responsive-Menu-Opened.png)
+![image](https://heny.dev/projects/JavaScript/responsive-header/assets/images/Header-Responsive-Menu-Opened.png)
 
 #### Features - Non-Full Width Menu Box (width: 300px;)
 
 - [x] When clicked outside the responsive menu box, it Closes the menu box (in addition to the close icon)
 
-![image](https://heny.dev/projects/responsive-header/assets/images/Header-Responsive-Menu-Opened-non-full-width.png)
+![image](https://heny.dev/projects/JavaScript/responsive-header/assets/images/Header-Responsive-Menu-Opened-non-full-width.png)
 
 ### Demo
 
-You can visit the demo [here](https://heny.dev/projects/responsive-header/)
+You can visit the demo [here](https://heny.dev/projects/JavaScript/responsive-header/)
 
 ---
 
